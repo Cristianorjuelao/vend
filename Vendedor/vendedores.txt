@@ -1,0 +1,4 @@
+ID vendedor: 6588 Vendedor: Jaime Moreno
+ID vendedor: 2140 Vendedor: Jaime Moreno
+ID vendedor: 2399 Vendedor: Leonardo Silva
+ID vendedor: 8670 Vendedor: Mackalister Catano
