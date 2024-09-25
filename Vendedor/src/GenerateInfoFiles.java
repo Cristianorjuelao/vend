@@ -17,7 +17,7 @@ public class GenerateInfoFiles {
             Vendedor vendedor = new Vendedor(nombre, apellido, id);
 
         try(FileWriter writer = new FileWriter("Lista De Vendedores",true)){
-            writer.write("ID vendedor: "+id+" Vendedor: "+nombre+" "+apellido+"\n" );
+            writer.write("Codigo De Vendedor: "+id+" Vendedor: "+nombre+" "+apellido+"\n" );
             System.out.println("Se Creo con Exito El Vendedor "+nombre+" "+apellido);
         }catch(IOException e) {
             System.out.println(" Error Al  Crear Al Vendedor " + e.getMessage());

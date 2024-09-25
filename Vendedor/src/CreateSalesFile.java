@@ -7,12 +7,12 @@ public class CreateSalesFile {
     public static void createSalesFile(int randomSalesCount, Vendedor vendedor){
         try(FileWriter writer = new FileWriter(vendedor.getNombreCompleto() +"ID: "+vendedor.getId()+".txt")){
             Random random = new Random();
-            writer.write("ID" + vendedor.getId() + "\n");
+            writer.write("Codigo Vendedor Es" + vendedor.getId() + "\n");
 
             for(int i=0; i<randomSalesCount; i++){
                 int productId = 100+random.nextInt(3);
                 int cantidad = random.nextInt(20)+1;
-                writer.write("Producto ID: "+productId+": Cantidad: "+cantidad+ "\n" );
+                writer.write("EAN Producto Es: "+productId+": Cantidad: "+cantidad+ "\n" );
             }
             System.out.println("Archivo De Ventas Creado Exitosamente");
         }catch (IOException e){
